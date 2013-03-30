@@ -219,7 +219,7 @@ public class RegisterActions {
     parser.registerAction(MappingMode.NVO, "VimMotionColumn", Command.Type.MOTION, Command.FLAG_MOT_EXCLUSIVE,
                           new Shortcut('|'));
     parser.registerAction(MappingMode.NVO, "VimMotionDown", Command.Type.MOTION, Command.FLAG_MOT_LINEWISE, new Shortcut[]{
-      new Shortcut('j'),
+      new Shortcut(','),
       new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_DOWN, 0)),
       new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_N, KeyEvent.CTRL_MASK)),
     });
@@ -287,7 +287,7 @@ public class RegisterActions {
                           Command.FLAG_MOT_LINEWISE | Command.FLAG_SAVE_JUMP,
                           new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_PAGE_DOWN, KeyEvent.CTRL_MASK)));
     parser.registerAction(MappingMode.NVO, "VimMotionLeft", Command.Type.MOTION, Command.FLAG_MOT_EXCLUSIVE, new Shortcut[]{
-      new Shortcut('h'),
+      new Shortcut('j'),
       new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, 0))
     });
     parser.registerAction(MappingMode.NVO, "VimMotionLeftMatchChar", Command.Type.MOTION,
